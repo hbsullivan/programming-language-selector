@@ -1,9 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <title>Programming Language Selector</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
 </head>
 <body>
-  
+
+  <div class="container">
+    <div class="jumbotron">
+    <h1>Programming Language Selector</h1>
+    <h2>Please complete the quiz below to decide which language is best for <strong>you</strong>!</h2>
+    </div>
+
+    <form id="quiz">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input id="name" type="text"><br>
+
+        <label for="season">What is your favorite season?</label>
+        <select id="season">
+          <option value="1">Spring</option>
+          <option value="2">Summer</option>
+          <option value="3">Fall</option>
+          <option value="4">Winter</option>
+        </select><br>
+        
+        <label for="hobby">What would you rather do?</label>
+        <select id="hobby">
+          <option value="1">Play sports</option>
+          <option value="2">Play and instrument</option>
+          <option value="3">Read a book</option>
+        </select><br>
+
+        <label for="animal">What is your favorite animal?</label>
+        <select id="animal">
+          <option value="1">Snake</option>
+          <option value="2">Monkey</option>
+          <option value="3">Tiger</option>
+        </select><br>
+
+        <label>Do you like free time?</label>
+        <label>
+          <input type="radio" name="free-time" value="yes" checked>
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="free-time" value="no">
+          No
+        </label><br>
+        <button type="submit" class="btn">Get Results</button>
+      </div>
+    </form>
+
+    <h3>Recommended Programming Language:</h3><br>
+    <p id="output"></p>
+  </div>
 </body>
 </html>
