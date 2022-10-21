@@ -1,9 +1,43 @@
 .btn {
   background-color: pink;
+  border-color: transparent;
+  color: gray;
 }
 
 .hidden {
   display: none;
+}
+
+#name {
+  background-color: pink;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+  color: gray
+}
+
+#season {
+  background-color: pink;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+  color: gray
+}
+
+#hobby {
+  background-color: pink;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+  color: gray
+}
+
+#animal {
+  background-color: pink;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+  color: gray
 }
 
 #reset {
@@ -11,5 +45,12 @@
   border-radius: 5px;
   border-color: transparent;
   padding: 5px;
+}
 
+body {
+  background-color: lightgray;
+}
+
+.radiobtn {
+ 
 }

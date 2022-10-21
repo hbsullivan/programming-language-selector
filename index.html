@@ -16,42 +16,50 @@
 
     <form id="quiz">
       <div class="form-group">
-        <label for="name">Name:</label>
-        <input id="name" type="text"><br>
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input id="name" type="text"><br>
+        </div><br>
 
         <label for="season">What is your favorite season?</label>
-        <select id="season">
-          <option value="1">Spring</option>
-          <option value="2">Summer</option>
-          <option value="3">Fall</option>
-          <option value="4">Winter</option>
-        </select><br>
+        <div class="dropdown">
+          <select id="season">
+            <option value="1">Spring</option>
+            <option value="2">Summer</option>
+            <option value="3">Fall</option>
+            <option value="4">Winter</option>
+          </select>
+        </div><br>
         
         <label for="hobby">What would you rather do?</label>
-        <select id="hobby">
-          <option value="1">Play sports</option>
-          <option value="2">Play and instrument</option>
-          <option value="3">Read a book</option>
-        </select><br>
+        <div class="dropdown">
+          <select id="hobby">
+            <option value="1">Play sports</option>
+            <option value="2">Play and instrument</option>
+            <option value="3">Read a book</option>
+          </select>
+        </div><br>
 
         <label for="animal">What is your favorite animal?</label>
-        <select id="animal">
-          <option value="1">Snake</option>
-          <option value="2">Monkey</option>
-          <option value="3">Tiger</option>
-        </select><br>
+        <div class="dropdown">
+          <select id="animal">
+            <option value="1">Snake</option>
+            <option value="2">Monkey</option>
+            <option value="3">Tiger</option>
+          </select>
+        </div><br>
 
         <label>Do you like free time?</label>
-        <label>
+        <label class="radiobtn">
           <input type="radio" name="free-time" value="yes" checked>
           Yes
         </label>
-        <label>
+        <label class="radiobtn">
           <input type="radio" name="free-time" value="no">
           No
-        </label><br>
-        <button type="submit" class="btn">Get Results</button><br><br>
-        <button type="button" class="hidden" id="reset">Clear results</button>
+        </label><br><br>
+        <button type="submit" class="btn btn-outline-secondary">Get Results</button><br><br>
+        <button type="button" class="hidden btn-outline-secondary" id="reset">Clear results</button>
       </div>
     </form>
 
