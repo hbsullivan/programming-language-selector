@@ -10,25 +10,43 @@ function quizValues(event) {
 let result
  if (name==="") {
    document.getElementById("error-message").removeAttribute("class");
-//   document.getElementById("reset").setAttribute("class", "hidden");
-//   document.getElementById("output").setAttribute("class", "hidden");
 } else if (freeTime === "yes") {
-  result = name + ", I'm sorry but programming is not for you."
+  result = name + ", I'm sorry but programming is not for you.";
+  document.getElementById("error-message").setAttribute("class", "hidden");
+  document.getElementById("output").removeAttribute("class");
+  document.getElementById("reset").removeAttribute("class", "hidden");
+  document.getElementById("reset").setAttribute("class", "btn btn-outline-secondary");
+  document.getElementById("output").innerText = result;
 } else if(season === "1") {
   result = name + ", your recommended language is Python.";
+  document.getElementById("error-message").setAttribute("class", "hidden");
+  document.getElementById("output").removeAttribute("class");
+  document.getElementById("reset").removeAttribute("class", "hidden");
+  document.getElementById("reset").setAttribute("class", "btn btn-outline-secondary");
+  document.getElementById("output").innerText = result;
 } else if (season === "2") {
   result = name + ", your recommended language is C#.";
+  document.getElementById("error-message").setAttribute("class", "hidden");
+  document.getElementById("output").removeAttribute("class");
+  document.getElementById("reset").removeAttribute("class", "hidden");
+  document.getElementById("reset").setAttribute("class", "btn btn-outline-secondary");
+  document.getElementById("output").innerText = result;
 } else if (season === "3") {
-  result = name + ", your recommended language is JavaScript."
+  result = name + ", your recommended language is JavaScript.";
+  document.getElementById("error-message").setAttribute("class", "hidden");
+  document.getElementById("output").removeAttribute("class");
+  document.getElementById("reset").removeAttribute("class", "hidden");
+  document.getElementById("reset").setAttribute("class", "btn btn-outline-secondary");
+  document.getElementById("output").innerText = result;
 } else if (season === "4") {
-  result = name + ", your recommended language is Ruby."
+  result = name + ", your recommended language is Ruby.";
+  document.getElementById("error-message").setAttribute("class", "hidden");
+  document.getElementById("output").removeAttribute("class");
+  document.getElementById("reset").removeAttribute("class", "hidden");
+  document.getElementById("reset").setAttribute("class", "btn btn-outline-secondary");
+  document.getElementById("output").innerText = result;
 }
 
-//Show results and reset button
-document.getElementById("output").removeAttribute("class");
-document.getElementById("reset").removeAttribute("class", "hidden");
-document.getElementById("reset").setAttribute("class", "btn btn-outline-secondary");
-document.getElementById("output").innerText = result;
 }
 
 window.addEventListener("load", function() {
