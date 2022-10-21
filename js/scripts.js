@@ -38,7 +38,7 @@ window.addEventListener("load", function() {
     document.getElementById("season").value = "1";
     document.getElementById("hobby").value = "1";
     document.getElementById("animal").value = "1";
-    document.querySelector("input[name='free-time']:checked").value = "true";
+    document.querySelector("input[name='free-time']:checked").value
     document.getElementById("reset").setAttribute("class", "hidden");
   })
 })
