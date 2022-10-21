@@ -1,4 +1,4 @@
-//Obtain values from quiz questions
+
 function quizValues(event) {
   event.preventDefault();
   const name = document.getElementById("name").value;
@@ -6,9 +6,9 @@ function quizValues(event) {
   const hobby = document.getElementById("hobby").value;
   const animal = document.getElementById("animal").value;
   const freeTime = document.querySelector("input[name='free-time']:checked").value;
-//Conditionals
+
 let result
- if (name==="") {
+if (name==="") {
    document.getElementById("error-message").removeAttribute("class");
    document.getElementById("output").setAttribute("class", "hidden");
    document.getElementById("reset").setAttribute("class", "hidden");
@@ -68,5 +68,3 @@ window.addEventListener("load", function() {
   })
  
 })
-
-//trying to figure out how to fix bug 
