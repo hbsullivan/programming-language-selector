@@ -10,6 +10,8 @@ function quizValues(event) {
 let result
  if (name==="") {
    document.getElementById("error-message").removeAttribute("class");
+   document.getElementById("output").setAttribute("class", "hidden");
+   document.getElementById("reset").setAttribute("class", "hidden");
 } else if (freeTime === "yes") {
   result = name + ", I'm sorry but programming is not for you.";
   document.getElementById("error-message").setAttribute("class", "hidden");
