@@ -6,26 +6,36 @@ function quizValues(event) {
   const hobby = document.getElementById("hobby").value;
   const animal = document.getElementById("animal").value;
   const freeTime = document.querySelector("input[name='free-time']:checked").value;
-
-//output values
-
+//Conditionals
 let result
 if (season === "1") {
-  result = name + ", your recommended language is Python";
+  result = name + ", your recommended language is Python.";
 } else if (season === "2") {
-  result = name + ", your recommended language is C#";
+  result = name + ", your recommended language is C#.";
 } else if (season === "3") {
-  result = name + ", your recommended language is JavaScript"
+  result = name + ", your recommended language is JavaScript."
 } else if (season === "4") {
-  result = name + ", your recommended language is Ruby"
+  result = name + ", your recommended language is Ruby."
 }
 
-
+//Show results and reset button
 document.getElementById("output").removeAttribute("class");
+document.getElementById("reset").removeAttribute("class");
 document.getElementById("output").innerText = result;
 }
 
 window.addEventListener("load", function() {
   const form = document.getElementById("quiz");
+  let resetBtn = document.querySelector("button#reset");
   form.addEventListener("submit", quizValues);
+
+  resetBtn.addEventListener("click", function() {
+    document.getElementById("output").setAttribute("class", "hidden");
+    document.getElementById("name").value = null;
+    document.getElementById("season").value = "1";
+    document.getElementById("hobby").value = "1";
+    document.getElementById("animal").value = "1";
+    document.querySelector("input[name='free-time']:checked").value = "yes";
+    document.getElementById("reset").setAttribute("class", "hidden");
+  })
 })

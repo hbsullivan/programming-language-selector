@@ -5,3 +5,11 @@
 .hidden {
   display: none;
 }
+
+#reset {
+  background-color: pink;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+
+}
