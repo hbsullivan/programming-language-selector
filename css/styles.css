@@ -1,7 +1,8 @@
 .btn {
   background-color: pink;
-  border-color: transparent;
+  border-color: gray;
   color: gray;
+  font-weight: 500;
 }
 
 .hidden {
@@ -40,13 +41,6 @@
   color: gray
 }
 
-/* #reset {
-  background-color: pink;
-  border-radius: 5px;
-  border-color: transparent;
-  padding: 5px;
-} */
-
 body {
   background-color: lightgray;
 }
@@ -54,7 +48,7 @@ body {
 #output {
   background-color: pink;
   border-radius: 5px;
-  border-color: transparent;
-  padding: 5px;
+  border: solid 3px gray;
+  padding: 10px;
   color: gray;
 }

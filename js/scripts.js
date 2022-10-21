@@ -8,7 +8,9 @@ function quizValues(event) {
   const freeTime = document.querySelector("input[name='free-time']:checked").value;
 //Conditionals
 let result
-if (season === "1") {
+if (freeTime === "yes") {
+  result = name + ", I'm sorry but programming is not for you."
+}else if(season === "1") {
   result = name + ", your recommended language is Python.";
 } else if (season === "2") {
   result = name + ", your recommended language is C#.";
