@@ -8,9 +8,13 @@ function quizValues(event) {
   const freeTime = document.querySelector("input[name='free-time']:checked").value;
 //Conditionals
 let result
-if (freeTime === "yes") {
+ if (name==="") {
+   document.getElementById("error-message").removeAttribute("class");
+//   document.getElementById("reset").setAttribute("class", "hidden");
+//   document.getElementById("output").setAttribute("class", "hidden");
+} else if (freeTime === "yes") {
   result = name + ", I'm sorry but programming is not for you."
-}else if(season === "1") {
+} else if(season === "1") {
   result = name + ", your recommended language is Python.";
 } else if (season === "2") {
   result = name + ", your recommended language is C#.";
@@ -40,5 +44,7 @@ window.addEventListener("load", function() {
     document.getElementById("animal").value = "1";
     document.querySelector("input[name='free-time']:checked").value
     document.getElementById("reset").setAttribute("class", "hidden");
+    document.getElementById("error-message").setAttribute("class", "hidden");
   })
+ 
 })

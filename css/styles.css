@@ -52,3 +52,12 @@ body {
   padding: 10px;
   color: gray;
 }
+
+#error-message {
+  color: red;
+  font-weight: 600;
+}
+
+#mouseover{
+  background-color: lightblue;
+}
