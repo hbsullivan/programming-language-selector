@@ -66,3 +66,5 @@ window.addEventListener("load", function() {
   })
  
 })
+
+//trying to figure out how to fix bug 
