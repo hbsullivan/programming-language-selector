@@ -20,7 +20,8 @@ if (season === "1") {
 
 //Show results and reset button
 document.getElementById("output").removeAttribute("class");
-document.getElementById("reset").removeAttribute("class");
+document.getElementById("reset").removeAttribute("class", "hidden");
+document.getElementById("reset").setAttribute("class", "btn btn-outline-secondary");
 document.getElementById("output").innerText = result;
 }
 

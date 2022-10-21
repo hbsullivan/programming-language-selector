@@ -40,17 +40,21 @@
   color: gray
 }
 
-#reset {
+/* #reset {
   background-color: pink;
   border-radius: 5px;
   border-color: transparent;
   padding: 5px;
-}
+} */
 
 body {
   background-color: lightgray;
 }
 
-.radiobtn {
- 
+#output {
+  background-color: pink;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+  color: gray;
 }
