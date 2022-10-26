@@ -3,8 +3,6 @@ function quizValues(event) {
   event.preventDefault();
   const name = document.getElementById("name").value;
   const season = document.getElementById("season").value;
-  const hobby = document.getElementById("hobby").value;
-  const animal = document.getElementById("animal").value;
   const freeTime = document.querySelector("input[name='free-time']:checked").value;
 
 let result
